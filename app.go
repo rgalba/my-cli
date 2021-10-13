@@ -21,6 +21,8 @@ func main() {
 		fileInfo, err := os.Stat(fullPath)
 
 		if err != nil {
+			fmt.Println("Error searching for this term:")
+			fmt.Println(err)
 			continue
 		}
 
